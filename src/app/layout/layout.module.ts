@@ -6,13 +6,17 @@ import { LayoutComponent } from './layout.component';
 import { MainComponent } from './main/main.component';
 import { ProductComponent } from './product/product.component';
 import { ShelfComponent } from './shelf/shelf.component';
+import { ShareModule } from './shared/share.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [LayoutComponent, MainComponent, ProductComponent, ShelfComponent],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    ShareModule,
+    FormsModule
   ]
 })
 export class LayoutModule { }

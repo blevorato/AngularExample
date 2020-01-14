@@ -1,1 +1,5 @@
 <p>product works!</p>
+
+<p *ngFor="let product of products$ | async ">{{product.iva}} , {{product.pvp}}</p>
+<input type="text" [(ngModel)]="id" /> 
+<button (click)="deleteProduct(28)">Delete</button>  
